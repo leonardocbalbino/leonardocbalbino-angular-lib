@@ -4,14 +4,16 @@ import { InputComponent } from './input/input.component';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {MatInputModule} from '@angular/material/input';
 
 
 @NgModule({
-  declarations: [ButtonComponent, InputComponent],
+  declarations: [ButtonComponent, InputComponent], //adicionar o componente aqui
   imports: [
     MatButtonModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatInputModule
   ],
-  exports: [ButtonComponent]
+  exports: [ButtonComponent, InputComponent] //adicionar o componente aqui
 })
 export class AngularLibModule { }
